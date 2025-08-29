@@ -1,6 +1,6 @@
 # Starknet ML Project - Blockchain Transaction Anomaly Detection
 
-A machine learning pipeline for detecting anomalous transactions on the Starknet blockchain using Isolation Forest algorithm.
+A machine learning pipeline that fetches Starknet blockchain data, processes transactions, trains an Isolation Forest model to detect anomalies, and visualizes the results. The system analyzes transaction patterns to identify unusual activity based on calldata length, transaction timing, and type.
 
 ## Overview
 
