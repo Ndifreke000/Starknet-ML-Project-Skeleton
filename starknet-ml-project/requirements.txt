@@ -1,0 +1,5 @@
+starknet-py
+pandas
+scikit-learn
+matplotlib
+joblib
