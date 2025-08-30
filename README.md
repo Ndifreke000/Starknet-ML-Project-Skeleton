@@ -16,9 +16,9 @@ This project implements a complete ML pipeline that:
 Starknet-ML-Project-Skeleton/
 ├── main.py              # Main pipeline orchestrator
 ├── requirements.txt     # Python dependencies
-|-- pyproject.toml
-|-- .gitignore
-|-- uv.lock
+├── pyproject.toml
+├── .gitignore
+├── uv.lock
 ├── data/               # Data storage
 │   ├── raw.csv                # Raw transaction data
 │   ├── processed.csv          # Preprocessed data
