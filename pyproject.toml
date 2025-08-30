@@ -1,7 +1,7 @@
 [project]
 name = "starknet-ml-project-skeleton"
 version = "0.1.0"
-description = "Add your description here"
+description = "A machine learning pipeline that fetches Starknet blockchain data, processes transactions, trains an Isolation Forest model to detect anomalies, and visualizes the results."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
