@@ -13,9 +13,12 @@ This project implements a complete ML pipeline that:
 ## Project Structure
 
 ```
-starknet-ml-project/
+Starknet-ML-Project-Skeleton/
 ├── main.py              # Main pipeline orchestrator
 ├── requirements.txt     # Python dependencies
+├── pyproject.toml
+├── .gitignore
+├── uv.lock
 ├── data/               # Data storage
 │   ├── raw.csv                # Raw transaction data
 │   ├── processed.csv          # Preprocessed data
@@ -23,7 +26,7 @@ starknet-ml-project/
 │   └── anomaly_scatter.png    # Visualization output
 ├── models/             # Model storage
 │   └── if_model.pkl          # Trained Isolation Forest model
-├── notebooks/          # Jupyter notebooks (optional)
+├── .python-version
 └── src/               # Source code
     ├── __init__.py           # Package initialization
     ├── config.py             # Configuration (RPC URL)
@@ -37,12 +40,24 @@ starknet-ml-project/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd starknet-ml-project
+   git clone https://github.com/Ndifreke000/Starknet-ML-Project-Skeleton.git
+   cd Starknet-ML-Project-Skeleton
+   ```
+2. **Install uv if not available**
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh   #MacOs/Linux
+   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex" #Windows
+   ```
+4. **Create and Activate a virtual environment (recommended)**
+   ```bash
+   uv venv
+   source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
    ```
 
-2. **Install dependencies**
+3. **Install dependencies**
    ```bash
+   uv sync
+   or
    pip install -r requirements.txt
    ```
 
@@ -53,7 +68,7 @@ starknet-ml-project/
    - `matplotlib`: Data visualization
    - `joblib`: Model serialization
 
-3. **Configure RPC endpoint**
+4. **Configure RPC endpoint**
    Edit `src/config.py` to set your Starknet RPC URL:
    ```python
    RPC_URL = "your-starknet-rpc-url-here"
