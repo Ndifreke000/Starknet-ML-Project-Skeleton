@@ -43,7 +43,7 @@ Starknet-ML-Project-Skeleton/
    git clone https://github.com/Ndifreke000/Starknet-ML-Project-Skeleton.git
    cd Starknet-ML-Project-Skeleton
    ```
-2. **Install uv if not available
+2. **Install uv if not available**
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh   #MacOs/Linux
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex" #Windows
