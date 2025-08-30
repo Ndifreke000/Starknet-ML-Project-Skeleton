@@ -37,13 +37,13 @@ starknet-ml-project/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd starknet-ml-project
+   git clone https://github.com/Ndifreke000/Starknet-ML-Project-Skeleton.git
+   cd Starknet-ML-Project-Skeleton
    ```
 2. **Activate a virtual environment (recommended)**
    ```bash
    uv venv
-   source .venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
    ```
 
 3. **Install dependencies**
