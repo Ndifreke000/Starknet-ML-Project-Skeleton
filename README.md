@@ -46,6 +46,7 @@ Starknet-ML-Project-Skeleton/
 2. **Install uv if not available
     '''bash
    curl -LsSf https://astral.sh/uv/install.sh | sh   #MacOs/Linux
+   
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex" #Windows
     ```
 4. **Create and Activate a virtual environment (recommended)**
