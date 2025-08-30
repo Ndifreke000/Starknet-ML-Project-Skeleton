@@ -40,9 +40,16 @@ starknet-ml-project/
    git clone <repository-url>
    cd starknet-ml-project
    ```
-
-2. **Install dependencies**
+2. **Activate a virtual environment (recommended)**
    ```bash
+   uv venv
+   source .venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install dependencies**
+   ```bash
+   uv sync
+   or
    pip install -r requirements.txt
    ```
 
@@ -53,7 +60,7 @@ starknet-ml-project/
    - `matplotlib`: Data visualization
    - `joblib`: Model serialization
 
-3. **Configure RPC endpoint**
+4. **Configure RPC endpoint**
    Edit `src/config.py` to set your Starknet RPC URL:
    ```python
    RPC_URL = "your-starknet-rpc-url-here"
