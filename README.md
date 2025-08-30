@@ -13,9 +13,12 @@ This project implements a complete ML pipeline that:
 ## Project Structure
 
 ```
-starknet-ml-project/
+Starknet-ML-Project-Skeleton/
 ├── main.py              # Main pipeline orchestrator
 ├── requirements.txt     # Python dependencies
+|-- pyproject.toml
+|-- .gitignore
+|-- uv.lock
 ├── data/               # Data storage
 │   ├── raw.csv                # Raw transaction data
 │   ├── processed.csv          # Preprocessed data
@@ -23,7 +26,7 @@ starknet-ml-project/
 │   └── anomaly_scatter.png    # Visualization output
 ├── models/             # Model storage
 │   └── if_model.pkl          # Trained Isolation Forest model
-├── notebooks/          # Jupyter notebooks (optional)
+├── .python-version
 └── src/               # Source code
     ├── __init__.py           # Package initialization
     ├── config.py             # Configuration (RPC URL)
