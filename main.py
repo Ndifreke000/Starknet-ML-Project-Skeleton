@@ -6,8 +6,7 @@ from src.train import train
 from src.visualize import plot
 
 def run():
-    # 1. fetch
-    import asyncio
+    # 1. fetch data
     df = asyncio.run(fetch_blocks(20))
     if df is None or df.empty:
         print("No rows fetched; aborting pipeline.")
