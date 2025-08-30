@@ -4,4 +4,10 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "joblib>=1.5.2",
+    "matplotlib>=3.10.6",
+    "pandas>=2.3.2",
+    "scikit-learn>=1.7.1",
+    "starknet-py>=0.15.2",
+]
